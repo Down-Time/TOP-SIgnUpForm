@@ -1,15 +1,13 @@
 body{
+
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  
   background-color: rgba(10, 10, 10, 0.897);
-
 }
 
 .image {
-
     width: 20vw;
     height: 100vh;
     background-image: url(./background.jpg);
@@ -19,11 +17,12 @@ body{
 
   }
 
-.logo{
+ 
 
+.logo{
   background-color: rgba(0, 0, 0, 0.55);
   color:white;
-  font-size: 3.5rem;
+  font-size: 2.5vw;
   font-family: Norse, 'Roboto Slab', serif;
   position: absolute;
   width: 100%;
@@ -38,9 +37,7 @@ body{
   height: 4rem;
   width: 4rem;
 }
-
 .bgattr{
-
   color: white;
   text-decoration: none;
   position: absolute;
@@ -49,45 +46,51 @@ body{
   font-family: sans-serif;
   font-weight: 600;
   padding: 0.5em;
-
 }
 
 .bgattr>a{
-
   text-decoration: none;
   color: white;
   font-size: small;
-
 }
-
-
- 
-
 .right{
-
   width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(190, 186, 186);
   background-image: linear-gradient(rgb(199, 190, 190),white,rgb(199, 190, 190));
-
 }
-
 .intro{
-
   margin: 1.5em;
   font-family: sans-serif;
   font-weight: bold;
-
-
+  }
+form{
+  background-color: white;
+  /* top | right | bottom | left */
+  padding: 2.5em 1.5em 2.5em 1.5em;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+form>h4{
+  grid-column: 1/3;
 }
 
-form{
+.account{
   margin: 1.5em;
 }
+.data{
+  display: flex;
+  flex-direction: column;
+}
+form>div>input{
+  border-color: #E5E7EB;
+  border-style: solid;
+  border-radius: .5em;
 
-
+}
 
   
   
