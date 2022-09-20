@@ -5,11 +5,11 @@ body{
   display: flex;
   justify-content: center;
   background-color: rgba(10, 10, 10, 0.897);
+  font-family: 'Roboto Slab' 'Montserrat' sans-serif;
 }
 
 .image {
     width: 20vw;
-    height: 100vh;
     background-image: url(./background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +43,6 @@ body{
   position: absolute;
   bottom: 0%;
   font-size: small;
-  font-family: sans-serif;
   font-weight: 600;
   padding: 0.5em;
 }
@@ -63,8 +62,8 @@ body{
 }
 .intro{
   margin: 1.5em;
-  font-family: sans-serif;
   font-weight: bold;
+  font-size: 1.4em;
   }
 form{
   background-color: white;
@@ -74,7 +73,7 @@ form{
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
-form>h4{
+form>h2{
   grid-column: 1/3;
 }
 
@@ -84,13 +83,36 @@ form>h4{
 .data{
   display: flex;
   flex-direction: column;
+  font-size: .8em;
 }
+
 form>div>input{
   border-color: #E5E7EB;
   border-style: solid;
   border-radius: .5em;
-
+  padding: .5em;
+}
+form>div>input:focus{
+  border-color: blue;
+  outline: none;
+  transition: border-color 1s;
+  box-shadow: 0 0 5pt 2pt rgb(133, 133, 252);
 }
 
+.account>input{
+  background-color:#596D48;
+  color: white;
+  padding: 1em 3em;
+  border-radius: 1em;
+  border-style: none;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.account>div>a{
+  text-decoration: none;
+  color:#596D48;
+
+}
   
   
