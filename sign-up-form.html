@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,67 +13,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
-
-    <section class="image">
-        <div class="logo"><img src="odin-lined.png" alt="ODIN"><h2>ODIN</h2></div>
+    <section class="left">
+        <figure class="logo">
+            <img class="odin" src="odin-lined.png" alt="ODIN" />
+            <figcaption>ODIN</figcaption>
+        </figure>
         <div class="bgattr">Photo by <a href="https://unsplash.com/@nahilnaseer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nahil Naseer</a> on <a href="https://unsplash.com/s/photos/pattern?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
     </section>
-
     <section class="right">
-
         <div class="intro">
-
             <p>This is not a real online service! Searching for the solution
                 to your process workflow.  We have the solution.  Sign up now
                 to get started.<br><br>
                 You know you want to!
             </p>
         </div>
-            <form action="post">
-                <h2>Let's Do This!</h2>
-                
-                <div class="data">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" name="fname" id="fname">
-                </div>
-                <div class="data">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" name="lname" id="lname">
-                </div>
-                <div class="data">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>    
-                <div class="data">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="number"><br>
-                </div>
-                <div class="data">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" name="pwd" id="pwd">
-                </div>
-
-                <div class="data">
-
-                    <label for="cpwd">CONFIRM PASSWORD</label>
-                    <input type="password" name="cpwd" id="cpwd">
-                </div>
-
-            </form>
-
+        <form id='info' action="post">
+            <h2>Let's Do This!</h2>
+            <div class="data">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" name="fname" id="fname" class="entry" required>
+            </div>
+            <div class="data">
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="lname" id="lname" class="entry" required>
+            </div>
+            <div class="data">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" class="entry" required>
+            </div>   
+            <div class="data">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="number" class="entry"><br>
+            </div>
+            <div class="data">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" name="pwd" id="pwd" class="entry" required>
+            </div>
+            <div class="data">
+                <label for="cpwd">CONFIRM PASSWORD</label>
+                <input type="password" name="cpwd" id="cpwd"  class="entry"required>
+            </div>
+        </form>
         <div class="account">
+            <input type="submit" value="Create Account" form="info" id="createaccountbtn">
 
-            <input type="button" value="Create Account">
-            <div>Already have an account? <a href="">Log In</a></div> 
-
+            <div>Already have an account? <a href="">Log In</a></div>
         </div>
 
     </section>
 
 </body>
-
- 
 
 </html>

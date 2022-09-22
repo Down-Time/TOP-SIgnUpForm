@@ -1,5 +1,4 @@
 body{
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,17 +6,14 @@ body{
   background-color: rgba(10, 10, 10, 0.897);
   font-family: 'Roboto Slab' 'Montserrat' sans-serif;
 }
-
-.image {
+.left {
     width: 20vw;
     background-image: url(./background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-
+    flex:none;
   }
-
- 
 
 .logo{
   background-color: rgba(0, 0, 0, 0.55);
@@ -31,12 +27,14 @@ body{
   justify-content: center;
   align-items: center;
   height: 5rem;
+  margin:0;
 }
 
-.logo>img{
+.odin{
   height: 4rem;
   width: 4rem;
 }
+
 .bgattr{
   color: white;
   text-decoration: none;
@@ -52,20 +50,27 @@ body{
   color: white;
   font-size: small;
 }
+
 .right{
   width: 40vw;
+  height: 100vh;
+  min-height: 730px;
+  min-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(190, 186, 186);
   background-image: linear-gradient(rgb(199, 190, 190),white,rgb(199, 190, 190));
 }
+
 .intro{
   margin: 1.5em;
   font-weight: bold;
   font-size: 1.4em;
   }
-form{
+
+#info{
+
   background-color: white;
   /* top | right | bottom | left */
   padding: 2.5em 1.5em 2.5em 1.5em;
@@ -73,46 +78,64 @@ form{
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
+
 form>h2{
   grid-column: 1/3;
 }
-
 .account{
   margin: 1.5em;
 }
+
 .data{
   display: flex;
   flex-direction: column;
   font-size: .8em;
 }
 
-form>div>input{
+.entry{
   border-color: #E5E7EB;
   border-style: solid;
   border-radius: .5em;
   padding: .5em;
 }
-form>div>input:focus{
+.entry:focus{
   border-color: blue;
   outline: none;
   transition: border-color 1s;
   box-shadow: 0 0 5pt 2pt rgb(133, 133, 252);
 }
 
-.account>input{
+.entry:user-invalid{
+  border-color: red;
+  outline: none;
+  transition: border-color 1s;
+  box-shadow: 0 0 5pt 2pt rgb(231, 140, 163);
+}
+ 
+#createaccountbtn{
   background-color:#596D48;
   color: white;
   padding: 1em 3em;
   border-radius: 1em;
-  border-style: none;
+  border-color: #596D48;
+  border-style:solid;
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1em;
 }
+#createaccountbtn:hover{
+  
+  border-style:solid;
+  transition: border-color 1s;
+  box-shadow: 0 0 5pt 2pt rgb(246, 248, 125);;
+}
+#createaccountbtn:active{
+  background-color: #5d9b51;
+  
+}
+
 .account>div>a{
   text-decoration: none;
   color:#596D48;
 
 }
-  
-  
